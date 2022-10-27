@@ -119,5 +119,9 @@ public class BasicCode {
 		       for(String number : numbers ) {
 		           System. out.println(number );
 		       }
+		       
+		 /* final 상수 -- 수정불가 변수 */
+		       final int MIN_NUM = 1;
+		       final double PI = 3.141592;
 	}
 }
