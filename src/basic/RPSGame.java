@@ -4,26 +4,33 @@ import java.util.*;
 
 public class RPSGame {
 	public static void main(String[] args) {
-		Scanner userRps = new Scanner(System.in);
-		String computerRps;
+		// 사용자가 낸 가위, 바위,보
+       	Scanner sc = new Scanner(System.in);
+       	String userRps = sc.next();
+        System.out.println("사용자: " + userRps);
+
+        // 컴퓨터가 낸 가위, 바위, 보
+		String computerRps = "";
 		Random random = new Random();
-		Integer computer = random.nextInt(3);
+		int computer = random.nextInt(3);
 		
-		Switch(computer){
+		switch(computer){
 			case 0:
-	            System. out.println("1" );
+	            computerRps = "가위";
 	            break;
 			case 1:
-	            System. out.println("2" );
+	            computerRps = "바위";
 	            break;
 			case 2:
-	            System. out.println("3" );
+	            computerRps = "보";
 	            break;
-			default:
-	            System. out.println("else" );
-	            break;
-	     }
+	        default:
+	        	break;
+	    }
+
+        System.out.println("컴퓨터: " + computerRps);
 		
+        // 승부 결정
 	}
 
 }
